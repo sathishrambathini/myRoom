@@ -1,0 +1,62 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./home.css">
+    <script src="./home.js"></script>
+</head>
+<body onload="onLoad()">
+
+
+<div class="signed-in" id="signed-in">
+    <div>
+        <div class="nav">
+            <div class="logo">
+                <div>
+                    <img class="pro-pic" src="https://secure.img1-fg.wfcdn.com/im/47196813/compr-r85/1292/129226061/myroom.jpg" height="60" width="60"/>
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <img class="pro-pic" src="https://secure.img1-fg.wfcdn.com/im/47196813/compr-r85/1292/129226061/myroom.jpg" id="pro-pic-pro" height="60" width="60"/>
+            <p class="name-pro" id="name-pro">Sathish</p>
+        </div>
+    </div>
+    <div class="body" id="innerBody">
+    </div>  
+    <div class="details-view" id="details">
+        
+    </div>  
+    <div class="form" id="form">
+        <div class="ip-elemts">
+            <p>Product<span style="color: red;">*</span> : </p>
+            <input class="ip-f" id="itemName"/>
+            <p>Purpose<span style="color: red;">*</span> :</p> 
+            <textarea class="ip-f" id="description" minlength="3"></textarea>
+            <p>Amount<span style="color: red;">*</span> :</p> 
+            <input class="ip-f" id="amount"/>
+            <p>Date<span style="color: red;">*</span> :</p> 
+            <input class="ip-f" type="date" id="createdDate"/>
+        </div>
+        <div class="form-btns">
+            <button class="btn-pr login-b" onclick="goBack()">Back</button>
+            <button id="saveBtn" class="btn-pr login-b" onclick="saveForm()">Save</button>
+        </div>
+    </div>
+</div>
+
+
+    <div class="form-s" id="form-login">
+        <div class="whole-form">
+            <div class="ip-elemts">
+                <p>Email<span style="color: red;">*</span> : </p>
+                <input class="ip-f" id="email" type="email"/>
+                <p>Password<span style="color: red;">*</span> :</p> 
+                <input class="ip-f" id="password" type="password"/>
+            </div>
+            <div class="form-btns">
+                <button class="btn-pr login-b" onclick="goBack()">Cancel</button>
+                <button class="btn-pr login-b" onclick="login()" type="submit">Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
